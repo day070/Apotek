@@ -13,7 +13,7 @@ $harga_beli = $_POST['harga_beli'];
 $stok_obat = $_POST['stok_obat'];
 $keterangan = $_POST['keterangan'];
 
-$hasil = mysqli_query($conn, "INSERT INTO tb_obat VALUES (NULL,'$nama_obat','$kategori_obat','$harga_beli','$harga_jual','$stok_obat','$keterangan','$id_supplier')");
+$hasil = mysqli_query($conn, "INSERT INTO tb_obat VALUES (NULL,'$id_supplier','$nama_obat','$kategori_obat','$harga_beli','$harga_jual','$stok_obat','$keterangan')");
 
 if (!$hasil) {
     // echo"<script>alert('gagal masukkan data');window.location='tambah_obat.php'</script>";
